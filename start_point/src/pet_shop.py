@@ -42,3 +42,9 @@ def get_stock_count(shop):
 
 def get_customer_cash(customer):
     return customer['cash']
+
+def remove_customer_cash(customer, i):
+    customer['cash'] -= i
+
+def get_customer_pet_count(customer):
+    return len(customer['pets'])
